@@ -14,7 +14,7 @@ To install, please refer to the official Obsidian Web Clipper documentation and 
 - Clip on the page displaying lyrics
 - Properties for collected information (artist, song title, etc.)
 
-> [!INFO]
+> [!NOTE]
 > Lyrics files are saved in separate folders so that you can organize files for creating lyrics cards for each song.  
 
 ## License
