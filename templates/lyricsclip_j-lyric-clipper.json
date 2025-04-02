@@ -1,0 +1,83 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "LyricsClip_J-Lyric",
+	"behavior": "create",
+	"noteContentFormat": "# {{selector:#mnb > div.lbdy > p:nth-child(1) > a}} - {{selector:#mnb > div.cap > h2|replace:\"「\":\"\"|split:\"」\"|slice:0,1}} - J-Lyric\n\n{{selectorHtml:#Lyric|markdown}}",
+	"properties": [
+		{
+			"name": "created",
+			"value": "{{date|date:\\\"YYYY-MM-DDTHH:mm:ss\\\"}}",
+			"type": "datetime"
+		},
+		{
+			"name": "updated",
+			"value": "{{date|date:\\\"YYYY-MM-DDTHH:mm:ss\\\"}}",
+			"type": "datetime"
+		},
+		{
+			"name": "title",
+			"value": "{{selector:#mnb > div.lbdy > p:nth-child(1) > a}} - {{selector:#mnb > div.cap > h2|replace:\\\"「\\\":\\\"\\\"|split:\\\"」\\\"|slice:0,1}} -- J-Lyric",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings",
+			"type": "multitext"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "vc-title",
+			"value": "{{selector:#mnb > div.cap > h2|replace:\\\"「\\\":\\\"\\\"|split:\\\"」\\\"|slice:0,1}}",
+			"type": "text"
+		},
+		{
+			"name": "vc-artist",
+			"value": "{{selector:#mnb > div.lbdy > p:nth-child(1) > a}}",
+			"type": "text"
+		},
+		{
+			"name": "vc-lyricist",
+			"value": "{{selector:#mnb > div.lbdy > p:nth-child(2)|split:\\\"：\\\"|slice:1,2}}",
+			"type": "text"
+		},
+		{
+			"name": "vc-composer",
+			"value": "{{selector:#mnb > div.lbdy > p:nth-child(3)|split:\\\"：\\\"|slice:1,2}}",
+			"type": "text"
+		},
+		{
+			"name": "vc-arranger",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "vc-released",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "vc-collab-type",
+			"value": "アニメ",
+			"type": "text"
+		},
+		{
+			"name": "vc-collab",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "status",
+			"value": "downloaded",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://j-lyric.net/artist/"
+	],
+	"noteNameFormat": "{{selector:#mnb > div.lbdy > p:nth-child(1) > a}} - {{selector:#mnb > div.cap > h2|replace:\"「\":\"\"|split:\"」\"|slice:0,1}} - J-Lyric",
+	"path": "Clips/{{selector:#mnb > div.lbdy > p:nth-child(1) > a}} - {{selector:#mnb > div.cap > h2|replace:\"「\":\"\"|split:\"」\"|slice:0,1}} - J-Lyric"
+}
