@@ -1,6 +1,6 @@
 # Obsidian Web Clipper用 歌詞クリッピングテンプレート
 
-[日本語](README.md)[英語](README_en.md)
+[日本語](README.md) | [英語](README_en.md)
 
 Obsidian Web Clipperを使って歌詞をクリッピングするテンプレート。  
 

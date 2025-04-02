@@ -1,6 +1,6 @@
 # Lyrics Clipping Templates for Obsidian Web Clipper
 
-[Japanese](README.md)[English](README_en.md)
+[Japanese](README.md) | [English](README_en.md)
 
 Templates for clipping lyrics using Obsidian Web Clipper.  
 
